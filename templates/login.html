@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel = "stylesheet" href ="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css">
+    <link rel = "stylesheet" href = "styles.css">
+</head>
+<body>
+    <header class="jumbotron bg-primary  text-white"  >
+        <div class="container">
+            <div class="row row-header">
+                <div class="col-12 col-sm-5">
+                    <h1>COVID-19 E-Pass </h1>
+                    <p>Governament of Telangana</p>
+                </div>
+                <div class="col-12 col-sm-1 align-self-center">
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class = "container">
+
+
+        <div class = "row row-content align-items-center">
+            <h2>Details for E-Pass</h2>
+
+          <div class = "col-md-4">
+              <p><h6>Fill the below form to get an e-pass.</h6>
+              <h6>E-pass is given based on the cases in each state and district.</h6>
+               <h6>  As there is high increase in number of cases e-pass to certain places is banned.</h6>   </p>
+              <p> A person can apply after <em>3 days</em> if the application is not approved . </p>
+          </div>
+          <hr>
+      </div>
+          <div class="row row-content align-items-center" id = "ticket">
+            <div class="col-12">
+               <h3>Applicant's Details</h3><br>
+            </div>
+             <div class="col-12 col-md-8">
+                 <form method="post" action="/registration">
+                     <div class="form-group row">
+                        <label for="first_name" class="col-md-2  col-form-label">First Name</label>
+                        <div class = "col-md-8">
+                            <input type="text" class="form-control border border-success" id="first_name" name="first_name" placeholder="First Name"><br>
+                        </div>
+                     </div>
+                     <div class="form-group row">
+                        <label for="last_name" class="col-md-2 col-form-label">Last Name</label>
+                        <div class = "col-md-8">
+                            <input type="text" class="form-control border border-success" id="last_name" name="last_name" placeholder="Last Name"><br>
+                        </div>
+                     </div>
+                     <div class="form-group row">
+                         <label for="email_id" class="col-md-2 col-form-label">Email</label>
+                         <div class="col-md-8">
+                             <input type="email" class="form-control border border-success" id="email_id" name="email_id" placeholder="abc@gmail.com"><br>
+                         </div>
+                     </div>
+                     <div class="form-group row">
+                        <label for="phoneNumber" class="col-md-2 col-form-label">Mobile Number</label>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control border border-success" id="phoneNumber" name="phoneNumber" placeholder="+91xxxxxxxxxx"><br>
+                        </div>
+                    </div>
+                     <div class = "form-group row">
+                         <label for = "source_state" class = "col-md-2 col-form-label">State</label>
+                         <div class = "col-md-3">
+                             <input type = "text" class = "form-control border border-success" id = "source_state" name = "source_state" placeholder = "State">
+                         </div>
+                         <label for = "source_district" class = "col-md-2 col-form-label">Source</label>
+                         <div class = "col-md-3">
+                             <input type = "text" class = "form-control border border-success" id = "source_district" name = "source_district" placeholder = "State District"><br>
+                         </div>
+                     </div>
+                     <div class = "form-group row">
+                        <label for = "dest_state" class = "col-md-2 col-form-label">Destination State</label>
+                        <div class = "col-md-3">
+                            <input type = "text" class = "form-control border border-success" id = "dest_state" name = "dest_state" placeholder = " Destination State">
+                        </div>
+                        <label for = "destination_dt" class = "col-md-2 col-form-label">Destination</label>
+                        <div class = "col-md-3">
+                            <input type = "text" class = "form-control border border-success" id = "destination_dt" name = "destination_dt" placeholder = "Destination District"><br>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="date" class="col-md-2 col-form-label">Date of Travel</label>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control border border-success" id="date" name="date" placeholder="date month year"><br>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="id_proof" class="col-md-2  col-form-label">Aadhar Number</label>
+                        <div class = "col-md-8">
+                            <input type="text" class="form-control border border-success" id="id_proof" name="id_proof" placeholder="xxxx-xxxx-xxxx"><br>
+                        </div>
+                     </div>
+                     <div class="form-group row">
+                         <div class="offset-md-2 col-md-10">
+                             <button type="submit" class="btn btn-outline-dark">Submit</button>
+                         </div>
+                         <br>
+                     </div>
+                 </form>
+             </div>
+              <div class="col-12 col-md">
+             </div>
+        </div>
+    </div>
+    <br>
+    <footer class = "footer">
+        <div class = "container">
+            <div class = "row">
+                <div class = "col-7 col-sm-5">
+                    <br>
+                    <div class="card text-white bg-success mb-6 " style="max-width: 20rem;">
+            <div class="card-header">For more information</div>
+            <div class="card-body">
+                    <address>
+		              <i class="fa fa-phone fa-lg"></i>: Tel.: 040 1234 5678<br>
+                      <br>
+		              <i class="fa fa-fax fa-lg"></i>: Fax: 040 2456 7890<br>
+                      <br>
+		              <i class="fa fa-envelope fa-lg"></i>: Email: <a href="#">helpdeskHydHealth@.co.in</a>
+		           </address>
+                </div>
+                <div class = "col-12 col-sm-4 align-self-center">
+                    <div class = "text-center">
+                        <a class="btn btn-social-icon btn-google" href="https://telanganaepass.cgg.gov.in/"><i class="fa fa-google"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+
+                    </div>
+                </div>
+           </div>
+           <div class = "row justify-content-center">
+                <div class = "col-auto">
+                    <p>© Copyright 2020 Telangana Government</p>
+                </div>
+           </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+</body>
+</html>
